@@ -5,12 +5,14 @@
   "name": "react-booking-23",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
   "scripts": {
-    "start" : "node backend/server",
-    "server" : "nodemon backend/server",
-    "frontend" : "npm start --prefix frontend",
-    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
